@@ -1,3 +1,7 @@
+"""
+This Python Skript draws the House of Santa Clause with Python turtle
+"""
+
 import math
 import turtle
 

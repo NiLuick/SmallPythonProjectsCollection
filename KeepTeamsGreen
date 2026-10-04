@@ -1,3 +1,7 @@
+"""
+This Python Skript simulates Activity to keep Microsoft Teams green
+"""
+
 import pyautogui
 import time
 import random

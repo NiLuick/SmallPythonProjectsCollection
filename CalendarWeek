@@ -1,3 +1,7 @@
+"""
+This Python Skript calculates the current Calendar Week
+"""
+
 from datetime import datetime, date, timedelta
 
 # Getting todays Date

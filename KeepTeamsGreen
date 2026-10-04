@@ -1,0 +1,24 @@
+import pyautogui
+import time
+import random
+
+# Settings
+intervallMinutes = 5
+
+try:
+    print("Script is running")
+
+    while True:
+        # Small Position change of the Cursor
+        x, y = pyautogui.position()
+        pyautogui.moveTo(x + random.randint(-1, 1), y + random.randint(-1, 1))
+
+        # Sending empty Keyboard press
+        pyautogui.press('shift')
+
+        print(f"Activity simulated at {time.strftime('%H:%M:%S')}")
+
+        time.sleep(intervallMinutes * 60)
+
+except KeyboardInterrupt:
+    print("Script was killed")

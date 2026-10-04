@@ -5,5 +5,6 @@ Collection of small beginner friendly Projects
 ## Requirements
 
 - Python 3.x
-- `turtle` — Python standard library
-- `math` — Python standard library
+- `turtle` - Python standard library
+- `math` - Python standard library
+- `datetime` - Maby Python standard library

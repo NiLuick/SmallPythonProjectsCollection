@@ -1,0 +1,21 @@
+from datetime import datetime, date, timedelta
+
+# Getting todays Date
+today = date.today()
+
+# Week of the Calendar Week (Monday is the first Day of the Week)
+calendarWeek = today.isocalendar()[1]
+
+# Year of the Calendar Week (Monday is the first Day of the Week)
+calendarYear = today.isocalendar()[0]
+
+# First Day of the Calander Week
+monday = today - timedelta(days = today.weekday())
+
+# Last Day of the Calander Week
+sunday = monday + timedelta(days = 6)
+
+# Console Output
+print(f"Ongoing Calendar Week : KW {calendarWeek}")
+print(f"Ongoing Calendar Year : {calendarYear}")
+print(f"Timeslot : {monday.strftime('%d.%m.%Y')} - {sunday.strftime('%d.%m.%Y')}")

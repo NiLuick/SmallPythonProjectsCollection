@@ -37,6 +37,5 @@ t.forward(diagonalLength / 2)
 t.right(45)
 t.forward(straightLength)
 
-
 # Keep Window open
 turtle.mainloop()
